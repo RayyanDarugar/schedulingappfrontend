@@ -1,7 +1,7 @@
 ---
 layout: scheduleStudent
-title: Time Box
+title: Planner
 units: "1,2"
 course: compsci
-permalink: /compsci/
+permalink: /planner/
 ---

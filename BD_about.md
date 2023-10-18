@@ -4,4 +4,4 @@ title: About Us
 permalink: /about/
 ---
 
-Creators of Alien World
+AP CSP Students

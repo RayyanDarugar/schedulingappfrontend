@@ -2,7 +2,7 @@
 toc: true
 comments: true
 layout: post
-title: Live Review Planning
+title: Planning for Live Review
 description: This live review is the kickoff for the N@tM final.
 type: tangibles
 courses: { compsci: {week: 0} }
@@ -10,29 +10,33 @@ courses: { compsci: {week: 0} }
 
 ### Summary of Accomplishments
 
-The remainder of the Trimester we will build a game for N@tM on Nov 2nd.  Teachers and Teacher Aids will follow along with assignments.
+- Team
+  - Aidan 
+  - Daniel 
+  - Nathan 
+  - Rayyan
 
-> Outline comes from Canvas Assignment
+- Clone GitHub repository: https://github.com/jm1021/alienWorld.git
 
-- Pick your team
-  - John (Mr M)
-  - Shane (Mr L)
-  - Rohan J
-  - Safin
+- Add Collaborators
 
-- Create GitHub repository: https://github.com/jm1021/alienWorld.git
+### Passion Project Idea
+- Incorporates Rayyan, Nathan, and Daniel's timer into Aidan's skincare idea
+- Create a Google Chrome Extension that tracks time spent shopping for skincare on Amazon
 
-- Create a 2D game to mimic Mario example
-
-  - Obtain assets
-    - [Alien World]({{site.baseurl}}/images/alien_planet.jpg)
-    - [Shadow Dog]({{site.baseurl}}/images/shadow_dog.png) and [Video Series](https://youtu.be/GFO_txvwK_c?t=14)
-
-- Outline Scenes.  See plan, but this is determined to be ongoing plan
-  - Scene work from Brain Write has begun
-  - Pick a tool (ie Figma, Canva), have assigned coder develop scenes
+- Outline project
+  - Shared frontend repo is created
+  - Shared backend repo is created
+  - Backend repo is deployed on AWS
+  - Team is using Canva to plan
 
 ### Other elements not in Canvas
 
-- Document problems in getting setup
-- Show any personal blogs or progrss
+- Discuss any bugs occured when setting up environment and how we fixed them
+- Show personal blogs and progress
+
+- ISSUES
+  - Encountered issue where commits would throw an error
+  - Found out that it was because I merged this branch with the main
+  - Reset commit to the last known one before merge and then copy files over 
+  - Commit worked now
