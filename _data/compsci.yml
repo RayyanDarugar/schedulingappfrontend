@@ -9,3 +9,8 @@ Unit2:
   description: Start implementation of planning process. Tangible project should be done.
   start: 2
   end: 2
+Unit3:
+  title: Finishing Touches
+  description: Projct should be tangible and finished. Last touches should be made.
+  start: 3
+  end: 4
