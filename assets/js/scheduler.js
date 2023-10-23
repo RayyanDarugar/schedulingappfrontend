@@ -10,7 +10,7 @@ addTaskButton.addEventListener("click", () => {
 	const deadline = deadlineInput.value;
 	if (task.trim() === "" || deadline === "") {
 		alert("Please select an upcoming date for the deadline.")
-		return; // Don't add task if task or deadline is empty
+		return; 
 	}
 
 	const selectedDate = new Date(deadline);
@@ -18,7 +18,7 @@ addTaskButton.addEventListener("click", () => {
 
 	if (selectedDate <= currentDate) {
 		alert("Please select an upcoming date for the deadline.");
-		return; // Don't add task if deadline is not in the future
+		return;
 	}
 
 
@@ -41,7 +41,11 @@ addTaskButton.addEventListener("click", () => {
 taskList.addEventListener("click", (event) => {
 	if (event.target.classList.contains("mark-done")) {
 		const taskItem = event.target.parentElement;
-		// taskItem.style.backgroundColor = "#f2f2f2";
+		taskItem.style.backgroundColor = "#666666";
 		event.target.disabled = true;
+	} else {
+		taskitem.style.backgroundColor = "#000000";
 	}
 });
+
+
