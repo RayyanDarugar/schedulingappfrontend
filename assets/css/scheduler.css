@@ -1,14 +1,10 @@
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-}
 
-main {
+
+/* main {
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 2rem;
-}
+} */
 
 .header-title {
   color: white;
@@ -34,7 +30,7 @@ main {
 	padding: 5px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-  color: white;
+  	color: white;
 }
 
 .task button {
