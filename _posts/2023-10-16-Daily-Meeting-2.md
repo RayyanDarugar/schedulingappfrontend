@@ -29,7 +29,7 @@ Learning outcome for week: Have a tangible product for N@TM
 - Thursday
   - Make any finishing touches to project(issues, backend, frontend, figma, AWS)
   - Add more issues! 
-- Friday - 
+- Friday  
   - What other ways can you use data to communicate from frontend to backend?
   - Can you pretty up the frontend?
 
