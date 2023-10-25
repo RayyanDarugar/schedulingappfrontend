@@ -3,7 +3,7 @@ toc: false
 comments: false
 hide: true
 layout: post
-type: help
+type: tangibles
 title: Tool References
 ---
 

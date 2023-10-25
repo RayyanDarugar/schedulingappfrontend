@@ -10,19 +10,17 @@ courses: { compsci: {week: 3} }
 
 ### N@TM Week
 
-
-- Weekend 
 - Monday 
-  
-
+  - Prepare for Qualifaction Day with team
+  - Individual reviews aswell
 - Tuesday 
-  
+  - LAST FINSIHING TOUCHES
 - Wednesday
-  
+  - No school
 - Thursday
-  
+   N@TM
 - Friday  
- 
+  - INdividual reviews if not completed
 
 
 
