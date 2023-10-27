@@ -35,7 +35,7 @@ courses: { compsci: {week: 0} }
 - Discuss any bugs occured when setting up environment and how we fixed them
 - Show personal blogs and progress
 
-- ISSUES
+### Issues
   - Encountered issue where commits would throw an error
   - Found out that it was because I merged this branch with the main
   - Reset commit to the last known one before merge and then copy files over 
