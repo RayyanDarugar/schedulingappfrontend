@@ -415,6 +415,7 @@ eventsContainer.addEventListener("click", (e) => {
 //function to save events in local storage
 function saveEvents() {
   localStorage.setItem("events", JSON.stringify(eventsArr));
+  localStorage.setItem(localStorage.getItem('currentUser'), JSON.stringify(eventsArr))
 }
 
 //function to get events from local storage
