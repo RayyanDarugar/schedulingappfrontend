@@ -4,6 +4,16 @@ title: Scheduling App
 ---
 
 <style>
+    p {
+        font: 'อีฟดอวอิ้ง';
+    }
+
+    h1 {
+        font: "อีฟดอวอิ้ง";
+    }
+
+    h1 {text-align: center;}
+    button {text-align: center;}
     .site-header
     {
         background-color: darkblue;
@@ -51,9 +61,11 @@ title: Scheduling App
 </style>
 <h1 style="color:black;">Project Study Buddy</h1>
 
-<p style="color:black;">
+<h3 style="color:black"><strong>
     What we're about: 
+</h3></strong>
 
+<p style="color:black; text-indent: 25px;">
     In our project, we intend to make scheduling for homework and study habits easier, by enabling
     students with the ability to create a plan to disperse workload, in the hopes that it would break
     procrastination habits. Daniel Choi, Rayyan Darugar, Aidan Lau, Nathaniel Obodovski all collaborated
@@ -64,8 +76,36 @@ title: Scheduling App
     project Study Buddy.
 </p>
 
-<a href="https://rayyandarugar.github.io/schedulingappfrontend/dailyPlan/">
-    <button>
-    Create your schedule!
-    </button>
-</a>
+<img src="images/dailyPlan.png" alt="Daily plan">
+
+    <style>
+        .big-button {
+            width: 200px; /* Set the width as desired */
+            height: 50px; /* Set the height as desired */
+            font-size: 18px; /* You can also adjust the font size */
+        }
+
+        .container {
+          height: 200px;
+          position: relative;
+        }
+        
+        .center {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        </style>
+        
+        <div class="container">
+          <div class="center">
+            <a href="https://rayyandarugar.github.io/schedulingappfrontend/dailyPlan/">
+                <button class="big-button">
+                Create your schedule!
+                </button>
+            </a>
+          </div>
+        </div>
