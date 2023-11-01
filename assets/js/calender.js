@@ -16,6 +16,17 @@ const calendar = document.querySelector(".calendar"),
   addEventFrom = document.querySelector(".event-time-from "),
   addEventTo = document.querySelector(".event-time-to "),
   addEventSubmit = document.querySelector(".add-event-btn ");
+/*
+document.querySelector(".event-name").value='test'; 
+document.querySelector(".event-time-from ").value='08:00'; 
+document.querySelector(".event-time-to ").value='08:00'; 
+document.querySelector(".add-event-btn").click();
+
+addEventTitle.value='test'; 
+addEventFrom.value='08:00'; 
+addEventTo.value='08:00'; 
+addEventSubmit.click();
+*/
 
 let today = new Date();
 let activeDay;
@@ -335,7 +346,7 @@ addEventSubmit.addEventListener("click", () => {
     }
   });
   if (eventExist) {
-    alert("Event already added");
+    // alert("Event already added");
     return;
   }
   const newEvent = {

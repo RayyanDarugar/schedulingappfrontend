@@ -22,6 +22,7 @@ courses: { compsci: {week: 3} }
 - Friday  
   - INdividual reviews if not completed
 
-
+- Here  is the flow of how our user will navigate through our site
+![User Flow](../../../images/study-buddy-flow.png)
 
 
