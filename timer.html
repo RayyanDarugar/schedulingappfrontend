@@ -55,6 +55,17 @@
 
     startTimer();
 
+    function playSound () {
+        let ding = new Audio('/schedulingappfrontend/images/ding.mp3');
+        ding.play();
+    }
+
+    function onTimesUp() {
+    clearInterval(timerInterval);
+    playSound();
+    }
+
+
     function onTimesUp() {
     clearInterval(timerInterval);
     }
