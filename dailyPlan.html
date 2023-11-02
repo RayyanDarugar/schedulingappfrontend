@@ -32,7 +32,7 @@ permalink: /dailyPlan/
   
       .h-card
       {
-          background-color: black;
+          background-color: rgb(0, 0, 0);
       }
   
       .site-footer
@@ -49,15 +49,16 @@ permalink: /dailyPlan/
       {
           background-color: darkblue;
       }
-      .page-link {
-        background-color: darkblue; /* Set background color to dark blue for page links */
-    }
+      .page-link 
+      {
+          background-color: darkblue; /* Set background color to dark blue for page links */
+      }
       
       .text-center {
         color: rgb(10, 10, 10); /* Set font color to black for text elements with class text-center */
     }
     
-
+      /*
     
     body {
         Font-Family: 'Noto Serif', Serif;
@@ -69,6 +70,7 @@ permalink: /dailyPlan/
         font-family: 'Varela Round', sans-serif;
       }
       
+      */
       textarea {
         background: transparent;
         border: none;
@@ -94,7 +96,7 @@ permalink: /dailyPlan/
         text-align: center;
         border-radius: 15px;
       }
-      
+      */
       .row {
         white-space: pre-wrap;
         height: 80px;
@@ -134,6 +136,8 @@ permalink: /dailyPlan/
         font-size: 25px;
         transition: all .3s ease-in-out;
       }
+
+      
 </style>
 <html>
     <head>
@@ -165,64 +169,65 @@ permalink: /dailyPlan/
     
       <body>
         <header class="jumbotron text-center">
-          <h1 class="display-3">Work Day Scheduler</h1>
+          <h1 class="display-3">Daily Plan</h1>
           <p class="lead">A simple calendar app for scheduling your work day</p>
+          <p class="lead">Click the Save Button to the right of your task to save the assignment (closed for showcase) and open a timer</p>
           <p id="currentDay" class="lead"></p>
         </header>
     
         <!-- Timeblocks 9AM to 5PM -->
         <div class="container">
           <div class="row time-block" id="9">
-            <div class="col-1 hour pt-2">9AM</div>
-            <textarea class="col-10 plan"></textarea>
-            <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+            <div class="col-1 hour pt-2">5:30 PM</div>
+            <textarea class="col-10 plan" readonly> Get Home From School </textarea>
+            <button onclick="openTimerPopup30()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
           <div class="row time-block" id="10">
-            <div class="col-1 hour pt-2">10AM</div>
-            <textarea class="col-10 plan"></textarea>
-            <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+            <div class="col-1 hour pt-2">6:00 PM</div>
+            <textarea class="col-10 plan" readonly> Walk Dog & Eat </textarea>
+            <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
           <div class="row time-block" id="11">
-            <div class="col-1 hour pt-2">11AM</div>
-            <textarea class="col-10 plan"></textarea>
-            <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+            <div class="col-1 hour pt-2">7:00 PM</div>
+            <textarea class="col-10 plan" readonly> AP Calc HW </textarea>
+            <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
           <div class="row time-block" id="12">
-            <div class="col-1 hour pt-2" value="12PM">12PM</div>
-            <textarea class="col-10 plan"></textarea>
-            <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+            <div class="col-1 hour pt-2" value="12PM">8:00 PM</div>
+            <textarea class="col-10 plan" readonly> 30 Min Break </textarea>
+            <button onclick="openTimerPopup30()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
           <div class="row time-block" id="13">
-            <div class="col-1 hour pt-2">1PM</div>
-            <textarea class="col-10 plan"></textarea>
-            <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+            <div class="col-1 hour pt-2">8:30 PM</div>
+            <textarea class="col-10 plan" readonly> APUSH HW </textarea>
+            <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
           <div class="row time-block" id="14">
-            <div class="col-1 hour pt-2">2PM</div>
-            <textarea class="col-10 plan"></textarea>
-            <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+            <div class="col-1 hour pt-2">9:30 PM</div>
+            <textarea class="col-10 plan" readonly> APEL HW </textarea>
+            <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
           <div class="row time-block" id="15">
-            <div class="col-1 hour pt-2">3PM</div>
-            <textarea class="col-10 plan"></textarea>
-            <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+            <div class="col-1 hour pt-2">10:30 PM</div>
+            <textarea class="col-10 plan" readonly> Robotics Grant Applications </textarea>
+            <button onclick="openTimerPopup30()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
           <div class="row time-block" id="16">
-            <div class="col-1 hour pt-2">4PM</div>
-            <textarea class="col-10 plan"></textarea>
-            <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
+            <div class="col-1 hour pt-2">11:00 PM</div>
+            <textarea class="col-10 plan" readonly> AP CSP Work </textarea>
+            <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
           <div class="row time-block" id="17">
-            <div class="col-1 hour pt-2">5PM</div>
-            <textarea class="col-10 plan"></textarea>
+            <div class="col-1 hour pt-2">12:00 AM</div>
+            <textarea class="col-10 plan" readonly> GO TO SLEEP </textarea>
             <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
@@ -327,3 +332,53 @@ permalink: /dailyPlan/
     timeBlockColor();
     usePlanner();
 </script>
+
+
+<style>
+    .page-link 
+    {
+        background-color: darkblue; /* Set background color to dark blue for page links */
+        border: transparent
+    }
+
+    .site-header
+    {
+      border-top: 0
+    }
+</style>
+
+<style>
+  .plan[readonly] {
+    font-size: 32px;
+    height: 65px;
+    display: flex; /* Enable flexbox layout */
+    text-align: center; /* Center the text horizontally */
+    background: transparent;
+    overflow: hidden;
+  }
+
+  .textarea.col-10.plan[readonly]
+  {
+    background-color: transparent;
+  }
+</style>
+
+<script>
+function openTimerPopup1() {
+    // Specify the URL of the timer page
+    var timerURL = "/schedulingappfrontend/timer2.html";
+    
+    // Open the timer page in a new window with specific dimensions
+    var timerPopup = window.open(timerURL, "Timer Popup", "width=450, height=350");
+}
+</script>
+
+<script>
+  function openTimerPopup30() {
+      // Specify the URL of the timer page
+      var timerURL = "/schedulingappfrontend/timer.html";
+      
+      // Open the timer page in a new window with specific dimensions
+      var timerPopup = window.open(timerURL, "Timer Popup", "width=450, height=350");
+  }
+  </script>
