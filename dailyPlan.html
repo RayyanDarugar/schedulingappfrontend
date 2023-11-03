@@ -75,7 +75,6 @@ permalink: /dailyPlan/
         background: transparent;
         border: none;
         resize: none;
-        color: #a4b6d6;
         border-left: 1px solid #88898C;
         padding: 10px;
       }
@@ -110,7 +109,7 @@ permalink: /dailyPlan/
       }
       
       .past {
-        background-color: #F2EDDC;
+        background-color: orange;
         color: white;
       }
       
@@ -177,55 +176,55 @@ permalink: /dailyPlan/
     
         <!-- Timeblocks 9AM to 5PM -->
         <div class="container">
-          <div class="row time-block" id="9">
+          <div class="row time-block" id="17.5">
             <div class="col-1 hour pt-2">5:30 PM</div>
             <textarea class="col-10 plan" readonly> Get Home From School </textarea>
             <button onclick="openTimerPopup30()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
-          <div class="row time-block" id="10">
+          <div class="row time-block" id="18">
             <div class="col-1 hour pt-2">6:00 PM</div>
             <textarea class="col-10 plan" readonly> Walk Dog & Eat </textarea>
             <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
-          <div class="row time-block" id="11">
+          <div class="row time-block" id="19">
             <div class="col-1 hour pt-2">7:00 PM</div>
             <textarea class="col-10 plan" readonly> AP Calc HW </textarea>
             <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
-          <div class="row time-block" id="12">
+          <div class="row time-block" id="20">
             <div class="col-1 hour pt-2" value="12PM">8:00 PM</div>
             <textarea class="col-10 plan" readonly> 30 Min Break </textarea>
             <button onclick="openTimerPopup30()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
-          <div class="row time-block" id="13">
+          <div class="row time-block" id="20.5">
             <div class="col-1 hour pt-2">8:30 PM</div>
             <textarea class="col-10 plan" readonly> APUSH HW </textarea>
             <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
-          <div class="row time-block" id="14">
+          <div class="row time-block" id="21.5">
             <div class="col-1 hour pt-2">9:30 PM</div>
             <textarea class="col-10 plan" readonly> APEL HW </textarea>
             <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
-          <div class="row time-block" id="15">
+          <div class="row time-block" id="22.5">
             <div class="col-1 hour pt-2">10:30 PM</div>
             <textarea class="col-10 plan" readonly> Robotics Grant Applications </textarea>
             <button onclick="openTimerPopup30()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
-          <div class="row time-block" id="16">
+          <div class="row time-block" id="23">
             <div class="col-1 hour pt-2">11:00 PM</div>
             <textarea class="col-10 plan" readonly> AP CSP Work </textarea>
             <button onclick="openTimerPopup1()" class="col-1 saveBtn"><i class="fas fa-save"></i></button>
           </div>
     
-          <div class="row time-block" id="17">
+          <div class="row time-block" id="24">
             <div class="col-1 hour pt-2">12:00 AM</div>
             <textarea class="col-10 plan" readonly> GO TO SLEEP </textarea>
             <button class="col-1 saveBtn"><i class="fas fa-save"></i></button>
@@ -283,7 +282,7 @@ permalink: /dailyPlan/
         var hour = moment().hours();
 
         $(".time-block").each(function() {
-            var currHour = parseInt($(this).attr("id"));
+            var currHour = parseFloat($(this).attr("id"));
 
             // console.log(this); //each time-block
 
@@ -357,9 +356,8 @@ permalink: /dailyPlan/
     overflow: hidden;
   }
 
-  .textarea.col-10.plan[readonly]
-  {
-    background-color: transparent;
+  .col-10.plan {
+    background-color: transparent !important;
   }
 </style>
 
